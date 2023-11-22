@@ -1,0 +1,2003 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13648, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005062FC (32-bit), Flags: CMdRE0, Thread: 0x360C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004222C4 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txBitBlt() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13648)
+
+# 1 0x0042CE51 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (83):
+
+     81: 
+     82:         Shablon();
+=>   83:         txBitBlt(txDC(), 370, 100, 470, 550, pic1, 0, 0);
+     84: 
+     85:         drawKnopShablon(905, "up");
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13648):
+
+  13646:     {
+  13647: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13648: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13649: 
+  13650: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (83):
+
+     81: 
+     82:         Shablon();
+=>   83:         txBitBlt(txDC(), 370, 100, 470, 550, pic1, 0, 0);
+     84: 
+     85:         drawKnopShablon(905, "up");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2023 20:08:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2023 20:08:32
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13648, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005062FC (32-bit), Flags: CMdRE0, Thread: 0xEDC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004222C4 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txBitBlt() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13648)
+
+# 1 0x0042CE51 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (83):
+
+     81: 
+     82:         Shablon();
+=>   83:         txBitBlt(txDC(), 370, 100, 470, 550, pic1, 0, 0);
+     84: 
+     85:         drawKnopShablon(905, "up");
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13648):
+
+  13646:     {
+  13647: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13648: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13649: 
+  13650: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (83):
+
+     81: 
+     82:         Shablon();
+=>   83:         txBitBlt(txDC(), 370, 100, 470, 550, pic1, 0, 0);
+     84: 
+     85:         drawKnopShablon(905, "up");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2023 20:08:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2023 20:08:52
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13698, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 470, 550} не полностью лежит внутри изображения-источника {0, 0, 465, 550}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005062FC (32-bit), Flags: CMdRE0, Thread: 0x3728 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13697) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004229ED in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txTransparentBlt() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13698)
+
+# 1 0x0042CE51 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (83):
+
+     81: 
+     82:         Shablon();
+=>   83:         txTransparentBlt(txDC(), 370, 100, 470, 550, pic1, 0, 0, TX_BLACK);
+     84: 
+     85:         drawKnopShablon(905, "up");
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13697):
+
+  13695:         {
+  13696: $       SetLastError (ERROR_INVALID_DATA);
+=>13697: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13698:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13699:         }
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (83):
+
+     81: 
+     82:         Shablon();
+=>   83:         txTransparentBlt(txDC(), 370, 100, 470, 550, pic1, 0, 0, TX_BLACK);
+     84: 
+     85:         drawKnopShablon(905, "up");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 20 2023 20:16:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 20 2023 20:16:58
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452CDC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x219C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452CDC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481DCB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489799 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D602 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:08:02, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:08:30
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452CDC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x219C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452CDC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481DCB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489799 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D602 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:08:02, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:08:30
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452DCC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x804 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452DCC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481EBB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489889 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D6F2 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:09:19, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:09:43
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452DCC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x804 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452DCC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481EBB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489889 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D6F2 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165, txLoadImage("photo/drinks/colla.bmp"),      178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165, txLoadImage("photo/drinks/wiski.bmp"),      178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930, 60, 141, 165, txLoadImage("photo/head_wear/ochky.bmp"),      178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:09:19, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:09:42
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452DCC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x4E8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452DCC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481EBB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489889 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D6F2 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:12:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:13:06
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452DCC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x4E8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452DCC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481EBB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489889 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D6F2 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:12:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:13:05
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452DCC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x3560 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452DCC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481EBB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489889 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D6F2 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:33:59, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:34:13
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00452DCC в функции _M_is_leaked() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000009A в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x3560 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00452DCC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_is_leaked() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00481EBB in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: swap() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00489889 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044D6F2 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: operator=() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042D0B1 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (134):
+
+    132:     menu_pic[6] = {930,  450, 141, 165,  txLoadImage("photo/drinks/colla.bmp"),       178, 200, false,  "Напитки"};
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+=>  134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    178, 200, false,  "Головной убор"};
+    135: 
+    136:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:33:59, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:34:14
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004CE889 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x1FA0 (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: __exchange_and_add() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: __exchange_and_add_dispatch() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x00481B2A in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_dispose() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x00489A23 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0044D862 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0042D1B9 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (135):
+
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+    134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    400, 266, false,  "Головной убор"};
+=>  135:     menu_pic[9] = {1078, 60,  141, 165,  txLoadImage("photo/T-Shirt/HudyMan.bmp.bmp"), 550, 550, false,  "Вид одежды"};
+    136: 
+    137:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (135):
+
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+    134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    400, 266, false,  "Головной убор"};
+=>  135:     menu_pic[9] = {1078, 60,  141, 165,  txLoadImage("photo/T-Shirt/HudyMan.bmp.bmp"), 550, 550, false,  "Вид одежды"};
+    136: 
+    137:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:38:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:39:13
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004CE889 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x1FA0 (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: __exchange_and_add() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: __exchange_and_add_dispatch() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x00481B2A in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: _M_dispose() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x00489A23 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0044D862 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0042D1B9 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (135):
+
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+    134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    400, 266, false,  "Головной убор"};
+=>  135:     menu_pic[9] = {1078, 60,  141, 165,  txLoadImage("photo/T-Shirt/HudyMan.bmp.bmp"), 550, 550, false,  "Вид одежды"};
+    136: 
+    137:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (135):
+
+    133:     menu_pic[7] = {1078, 450, 141, 165,  txLoadImage("photo/drinks/wiski.bmp"),       178, 200, false,  "Напитки"};
+    134:     menu_pic[8] = {930,  60,  141, 165,  txLoadImage("photo/head_wear/ochky.bmp"),    400, 266, false,  "Головной убор"};
+=>  135:     menu_pic[9] = {1078, 60,  141, 165,  txLoadImage("photo/T-Shirt/HudyMan.bmp.bmp"), 550, 550, false,  "Вид одежды"};
+    136: 
+    137:     picture centr_pic[count_pic];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 17:38:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 17:39:13
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E0DD в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 237 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x1EB8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E0DD in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (237):
+
+    235:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    236:             {
+=>  237:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*0.8;
+    238:             }
+    239: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (235):
+
+    233:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    234:             }
+=>  235:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    236:             {
+    237:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*0.8;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:20:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:20:55
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E0DD в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 237 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x1EB8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E0DD in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (237):
+
+    235:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    236:             {
+=>  237:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*0.8;
+    238:             }
+    239: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (235):
+
+    233:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    234:             }
+=>  235:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    236:             {
+    237:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*0.8;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:20:37, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:20:54
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042DF5D в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 232 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x19F8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042DF5D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (232):
+
+    230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+=>  232:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    233:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    234:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (230):
+
+    228:             }
+    229: 
+=>  230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+    232:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:21:44, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:22:02
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042DF5D в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 232 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x19F8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042DF5D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (232):
+
+    230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+=>  232:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    233:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    234:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (230):
+
+    228:             }
+    229: 
+=>  230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+    232:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:21:44, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:22:01
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042DF5D в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 232 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x1EA8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042DF5D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (232):
+
+    230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+=>  232:                 centr_pic[quest].h *= centr_pic[quest].h*1.2;
+    233:                 centr_pic[quest].w *= centr_pic[quest].w*1.2;
+    234:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (230):
+
+    228:             }
+    229: 
+=>  230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+    232:                 centr_pic[quest].h *= centr_pic[quest].h*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:23:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:23:27
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042DF5D в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 232 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x1EA8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042DF5D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (232):
+
+    230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+=>  232:                 centr_pic[quest].h *= centr_pic[quest].h*1.2;
+    233:                 centr_pic[quest].w *= centr_pic[quest].w*1.2;
+    234:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (230):
+
+    228:             }
+    229: 
+=>  230:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    231:             {
+    232:                 centr_pic[quest].h *= centr_pic[quest].h*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:23:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:23:26
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E157 в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 239 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x2874 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E157 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (239):
+
+    237:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    238:             {
+=>  239:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    240:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    241:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (237):
+
+    235:             }
+    236: 
+=>  237:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    238:             {
+    239:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:32:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:33:02
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E157 в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 239 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x2874 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E157 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (239):
+
+    237:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    238:             {
+=>  239:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    240:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    241:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (237):
+
+    235:             }
+    236: 
+=>  237:             if(txGetAsyncKeyState(VK_ADD) || txGetAsyncKeyState(VK_OEM_PLUS))
+    238:             {
+    239:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:32:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:33:02
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E340 в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 251 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x19A4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E340 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (251):
+
+    249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+=>  251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    252:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    253:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (249):
+
+    247:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    248:             }
+=>  249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+    251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:41:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:42:44
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E340 в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 251 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x19A4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E340 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (251):
+
+    249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+=>  251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    252:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    253:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (249):
+
+    247:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    248:             }
+=>  249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+    251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:41:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:42:45
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E340 в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 251 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0xF28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E340 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (251):
+
+    249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+=>  251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    252:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    253:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (249):
+
+    247:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    248:             }
+=>  249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+    251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:41:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:48:03
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0042E340 в функции main() в файле C:/Users/Anastasia/Desktop/projectHudy/main.cpp на строке 251 в модуле C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0xF28 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042E340 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (251):
+
+    249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+=>  251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+    252:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    253:             }
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (249):
+
+    247:                 centr_pic[quest].w_scr *= centr_pic[quest].w_scr*1.2;
+    248:             }
+=>  249:             if(txGetAsyncKeyState(VK_SUBTRACT) || txGetAsyncKeyState(VK_OEM_MINUS))
+    250:             {
+    251:                 centr_pic[quest].h_scr *= centr_pic[quest].h_scr*1.2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 18 2023 20:41:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 18 2023 20:48:03
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13588, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x164 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00421A07 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txLoadImage() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13588)
+
+# 1 0x0042D0C5 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13588):
+
+  13586:                  unsigned imageFlags /*= IMAGE_BITMAP*/, unsigned loadFlags /*= LR_LOADFROMFILE*/)
+  13587:     {
+=>13588: $1  if (_TX_ARGUMENT_FAILED (filename && *filename)) return NULL;
+  13589: 
+  13590: $   HBITMAP image = (HBITMAP) Win32::LoadImage ((loadFlags & LR_LOADFROMFILE)? NULL : GetModuleHandle (NULL),
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2023 19:58:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 15 2023 19:58:50
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13588, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x2EE8 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00421A07 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txLoadImage() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13588)
+
+# 1 0x0042D0C5 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13588):
+
+  13586:                  unsigned imageFlags /*= IMAGE_BITMAP*/, unsigned loadFlags /*= LR_LOADFROMFILE*/)
+  13587:     {
+=>13588: $1  if (_TX_ARGUMENT_FAILED (filename && *filename)) return NULL;
+  13589: 
+  13590: $   HBITMAP image = (HBITMAP) Win32::LoadImage ((loadFlags & LR_LOADFROMFILE)? NULL : GetModuleHandle (NULL),
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2023 19:58:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 15 2023 19:59:15
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13588, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x29B0 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00421A07 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txLoadImage() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13588)
+
+# 1 0x0042D07D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13588):
+
+  13586:                  unsigned imageFlags /*= IMAGE_BITMAP*/, unsigned loadFlags /*= LR_LOADFROMFILE*/)
+  13587:     {
+=>13588: $1  if (_TX_ARGUMENT_FAILED (filename && *filename)) return NULL;
+  13589: 
+  13590: $   HBITMAP image = (HBITMAP) Win32::LoadImage ((loadFlags & LR_LOADFROMFILE)? NULL : GetModuleHandle (NULL),
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2023 20:00:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 15 2023 20:00:47
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13588, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x2538 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00421A07 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txLoadImage() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13588)
+
+# 1 0x0042D07D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13588):
+
+  13586:                  unsigned imageFlags /*= IMAGE_BITMAP*/, unsigned loadFlags /*= LR_LOADFROMFILE*/)
+  13587:     {
+=>13588: $1  if (_TX_ARGUMENT_FAILED (filename && *filename)) return NULL;
+  13589: 
+  13590: $   HBITMAP image = (HBITMAP) Win32::LoadImage ((loadFlags & LR_LOADFROMFILE)? NULL : GetModuleHandle (NULL),
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2023 20:01:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 15 2023 20:01:30
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13588, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x11BC (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00421A07 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txLoadImage() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13588)
+
+# 1 0x0042D07D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13588):
+
+  13586:                  unsigned imageFlags /*= IMAGE_BITMAP*/, unsigned loadFlags /*= LR_LOADFROMFILE*/)
+  13587:     {
+=>13588: $1  if (_TX_ARGUMENT_FAILED (filename && *filename)) return NULL;
+  13589: 
+  13590: $   HBITMAP image = (HBITMAP) Win32::LoadImage ((loadFlags & LR_LOADFROMFILE)? NULL : GetModuleHandle (NULL),
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2023 20:01:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 15 2023 20:05:54
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13588, функция: HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "filename && *filename".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRE0, Thread: 0x224C (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00421A07 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txLoadImage() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13588)
+
+# 1 0x0042D07D in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in HDC__* {anonymous}::TX::txLoadImage(const char*, int, int, unsigned int, unsigned int) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13588):
+
+  13586:                  unsigned imageFlags /*= IMAGE_BITMAP*/, unsigned loadFlags /*= LR_LOADFROMFILE*/)
+  13587:     {
+=>13588: $1  if (_TX_ARGUMENT_FAILED (filename && *filename)) return NULL;
+  13589: 
+  13590: $   HBITMAP image = (HBITMAP) Win32::LoadImage ((loadFlags & LR_LOADFROMFILE)? NULL : GetModuleHandle (NULL),
+
+# 1 in int main() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (192):
+
+    190:     for(int i=0; i<count_pic; i++)
+    191:     {
+=>  192:         menu_pic[i].pic = txLoadImage(menu_pic[i].adress.c_str());
+    193: 
+    194:         menu_pic[i].w = getw(menu_pic[i].adress);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Nov 15 2023 20:11:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Nov 15 2023 20:11:33
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
