@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="4396" topLine="132" />
-		<BrowseMarks positions="42,83,126,175,177,2583,2633,3311,3390,3678,4610" />
-		<Book_Marks positions="2046,8479,4275,4275,3406" />
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="4561" topLine="146" />
+		<BrowseMarks positions="4395,5151,5204,5268,5326,5379,5432,5631,5717,3374,3422,3560,3637,3685,3839,3854,3877,3888,3913,4238" />
+		<Book_Marks positions="2046,8479,4275,4275,3406,5484,3918,3860,3890" />
 	</File>
 </BrowseTracker_layout_file>

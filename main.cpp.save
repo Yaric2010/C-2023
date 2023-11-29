@@ -132,14 +132,20 @@ int ReadFolders(string adressDir, picture menu_pic[], int count_pic)
 {
     DIR *dir;
     struct dirent *ent;
+    int X = 900;
+    int Y = 50;
     if ((dir = opendir (adressDir.c_str())) != NULL)
     {
         while ((ent = readdir (dir)) != NULL)
         {
             if((string)ent->d_name != "." && (string)ent->d_name != "..")
             {
+                if(Y =)
+                menu_pic[count_pic].y = Y;
+                menu_pic[count_pic].x = X;
                 menu_pic[count_pic].adress = adressDir + (string)ent->d_name;
                 count_pic++;
+                Y+= 150;
             }
       }
         closedir (dir);
@@ -154,7 +160,7 @@ int main()
     txDisableAutoPause();
 
     int count_btn = 3;
-    int count_pic = 10;
+    int count_pic = 0;
     int quest = -1;
     bool mousefree = false;
 
@@ -168,16 +174,16 @@ int main()
     btn[2] = {158 + 148, "Головные уборы", "head_wear", 3};
 
     picture menu_pic[50];
-    menu_pic[0] = {930,  60,  141, 165};
-    menu_pic[1] = {1078, 60,  141, 165};
-    menu_pic[2] = {930, 255,  141, 165};
-    menu_pic[3] = {930,  60,  141, 165};
-    menu_pic[4] = {1078, 60,  141, 165};
-    menu_pic[5] = {930,  255, 141, 165};
-    menu_pic[6] = {1078, 255, 141, 165};
-    menu_pic[7] = {930,  450, 141, 165};
-    menu_pic[8] = {1078, 450, 141, 165};
-    menu_pic[9] = {930,  60,  141, 165};
+    menu_pic[0] = {900,  50};
+    menu_pic[1] = {900, 200};
+    menu_pic[2] = {900, 350};
+    menu_pic[3] = {900,  50};
+    menu_pic[4] = {900, 200;
+    menu_pic[5] = {900,  350};
+    menu_pic[6] = {900, 500};
+    menu_pic[7] = {1000,  50};
+    menu_pic[8] = {1000, 200};
+    menu_pic[9] = {900,  50};
     count_pic = ReadFolders("photo/T-Shirt/", menu_pic, count_pic);
     count_pic = ReadFolders("photo/drinks/", menu_pic, count_pic);
     count_pic = ReadFolders("photo/head_wear/", menu_pic, count_pic);
@@ -195,9 +201,16 @@ int main()
         int pos1 = str.find("/");
         int pos2 = str.find("/", pos1+1);
         menu_pic[i].category = str.substr(pos1 + 1, pos2 - (pos1+1));
+
         if(menu_pic[i].category == "head_wear" || menu_pic[i].category == "drinks")
         {
-             menu_pic
+             menu_pic[i].w_scr = menu_pic[i].w / 3;
+             menu_pic[i].h_scr = menu_pic[i].h / 3;
+        }
+        if(menu_pic[i].category == "T-Shirt")
+        {
+             menu_pic[i].w_scr = menu_pic[i].w / 2;
+             menu_pic[i].h_scr = menu_pic[i].h / 2;
         }
     }
 
