@@ -2001,3 +2001,671 @@ Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
 Directory:	C:\Users\Anastasia\Desktop\projectHudy
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x498 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DD38 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D2EC in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (286):
+
+    284:         for(int i=0; i<count_btn; i++)
+    285:         {
+=>  286:             btn[i].draw();
+    287:         }
+    288: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:11:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:12:14
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x405C (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DD88 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D34A in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (287):
+
+    285:         for(int i=0; i<count_btn; i++)
+    286:         {
+=>  287:             btn[i].draw();
+    288:         }
+    289: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:13:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:13:22
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x3990 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DE28 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D384 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (291):
+
+    289:         for(int i=0; i<count_btn; i++)
+    290:         {
+=>  291:             btn[i].draw();
+    292:         }
+    293: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:16:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:17:12
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x44C0 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DE28 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D384 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (291):
+
+    289:         for(int i=0; i<count_btn; i++)
+    290:         {
+=>  291:             btn[i].draw();
+    292:         }
+    293: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:16:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:19:43
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x2CBC (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DE28 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D384 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (291):
+
+    289:         for(int i=0; i<count_btn; i++)
+    290:         {
+=>  291:             btn[i].draw();
+    292:         }
+    293: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:16:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:20:22
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x3F98 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DE28 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D384 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (291):
+
+    289:         for(int i=0; i<count_btn; i++)
+    290:         {
+=>  291:             btn[i].draw();
+    292:         }
+    293: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:16:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:20:30
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe, файл: c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h, строка: 13402, функция: bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "text".
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x1DA4 (Main), GetLastError(): 160 (Неверны один или несколько аргументов). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042010C in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: txDrawText() at c:/users/anastasia/desktop/codeblocks/mingw/include/txlib.h (13402)
+
+# 1 0x0044DE28 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: draw() at c:/users/anastasia/desktop/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0042D384 in C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe: main() at C:/Users/Anastasia/Desktop/projectHudy/main.cpp (291):
+
+    289:         for(int i=0; i<count_btn; i++)
+    290:         {
+=>  291:             btn[i].draw();
+    292:         }
+    293: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txDrawText(double, double, double, double, const char*, unsigned int, HDC) at c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h (13402):
+
+  13400:                  HDC dc /*= txDC()*/)
+  13401:     {
+=>13402: $1  if (_TX_ARGUMENT_FAILED    (text)) return false;
+  13403: $   if (_TX_DEFAULT_HDC_FAILED (dc))   return false;
+  13404: 
+
+# 1 in void Button::draw() at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (65):
+
+     63:         txSetColor(TX_BLACK);
+     64:         txSelectFont("Times New Roman", 25);
+=>   65:         txDrawText(x + 2, y, x + 135,  y + 26, name);
+     66: 
+     67:     }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:16:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:20:58
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Исключение С++, вызванное оператором throw.
+
+#1: Исключение EXCEPTION_CPP_MSC (0xE06D7363) при выполнении кода по адресу 0x76D1D982 в функции RaiseException() в модуле C:\WINDOWS\System32\KERNELBASE.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+Ой, всё (EXCEPTION_NONCONTINUABLE).
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0x18A0 (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76D1D982 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x76A66EA8 in C:\WINDOWS\System32\ucrtbase.dll: CxxThrowException()
+# 6 0x6DC2D016 in C:\Windows\System32\uiautomationcore.dll: UiaReturnRawElementProvider()
+# 7 0x6DC60CD6 in C:\Windows\System32\uiautomationcore.dll: UiaHostProviderFromHwnd()
+# 8 0x6DD833B0 in C:\Windows\System32\uiautomationcore.dll: WindowPattern_WaitForInputIdle()
+# 9 0x6DD838E6 in C:\Windows\System32\uiautomationcore.dll: WindowPattern_WaitForInputIdle()
+#10 0x6DC20C13 in C:\Windows\System32\uiautomationcore.dll: UiaReturnRawElementProvider()
+#11 0x6DC20338 in C:\Windows\System32\uiautomationcore.dll: UiaReturnRawElementProvider()
+#12 0x5DB7977C in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::TooltipMaxWidthProp()
+#13 0x62E5F491 in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#14 0x5DB5D178 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::HWNDElement::StaticWndProc()
+#15 0x763F0F4B in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#16 0x763E7EFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#17 0x763E75D7 in C:\WINDOWS\System32\USER32.dll: GetSystemMetricsForDpi()
+#18 0x763E577B in C:\WINDOWS\System32\USER32.dll: CallWindowProcW()
+#19 0x5DAA270E in C:\WINDOWS\SYSTEM32\DUser.dll: InvalidateGadget()
+#20 0x763F0F4B in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#21 0x763E7EFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#22 0x763E75D7 in C:\WINDOWS\System32\USER32.dll: GetSystemMetricsForDpi()
+#23 0x763E577B in C:\WINDOWS\System32\USER32.dll: CallWindowProcW()
+#24 0x6D79AE5D in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#25 0x6D79ABF6 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#26 0x62E81EEB in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#27 0x62E81E4F in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#28 0x6D79AE02 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#29 0x6D79ABF6 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#30 0x62E82CA7 in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#31 0x62E82C4F in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#32 0x6D79AE02 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#33 0x6D79AEFB in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#34 0x6D79ACB1 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#35 0x763F0F4B in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#36 0x763E7EFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#37 0x763E7AFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#38 0x763EB6BF in C:\WINDOWS\System32\USER32.dll: CallNextHookEx()
+#39 0x7746508D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+#40 0x763EB1C2 in C:\WINDOWS\System32\USER32.dll: SendMessageTimeoutW()
+#41 0x748F8C95 in C:\WINDOWS\system32\Oleacc.dll: GetOleaccVersionInfo()
+#42 0x748F8B4B in C:\WINDOWS\system32\Oleacc.dll: GetOleaccVersionInfo()
+#43 0x7491F43E in C:\WINDOWS\system32\Oleacc.dll: AccGetRunningUtilityState()
+#44 0x7491F9F7 in C:\WINDOWS\system32\Oleacc.dll: AccessibleObjectFromEvent()
+#45 0x75F5EBF9 in C:\WINDOWS\System32\MSCTF.dll: TF_SetShowFloatingStatus()
+#46 0x75F2BDD5 in C:\WINDOWS\System32\MSCTF.dll: TF_SendLangBandMsg()
+#47 0x75EEF828 in C:\WINDOWS\System32\MSCTF.dll: HasDeferredInputForCoreDispatcher()
+#48 0x75EEEB82 in C:\WINDOWS\System32\MSCTF.dll: CtfImeSetActiveContext()
+#49 0x763EF4C9 in C:\WINDOWS\System32\USER32.dll: GetClassNameW()
+#50 0x7746508D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+#51 0x6DC9C964 in C:\Windows\System32\uiautomationcore.dll: UiaDisconnectProvider()
+#52 0x6DC6168C in C:\Windows\System32\uiautomationcore.dll: UiaRaiseAutomationEvent()
+#53 0x5DBEFE9D in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::EventManager::HandleAccChange()
+#54 0x5DB785F7 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::TooltipMaxWidthProp()
+#55 0x62E85AEA in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#56 0x5DB4A139 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::_PostSourceChange()
+#57 0x5DB475EC in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::_SetValue()
+#58 0x5DB64DA1 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::SetKeyFocus()
+#59 0x62EC678A in C:\WINDOWS\system32\explorerframe.dll: DllCanUnloadNow()
+#60 0x5DB458F3 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::_DisplayNodeCallback()
+#61 0x5DAA2013 in C:\WINDOWS\SYSTEM32\DUser.dll: SetGadgetRootInfo()
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in std::string filedialog(bool) at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (179):
+
+    177:     ZeroMemory(&ofn, sizeof(ofn));
+    178:     ofn.lStructSize = sizeof(ofn);
+=>  179:     ofn.hwndOwner = txWindow();
+    180:     ofn.lpstrFile = szFile;
+    181:     // Set lpstrFile[0] to '\0' so that GetOpenFileName does not
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:23:28, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:25:04
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Downloads
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe,
+
+ВНЕЗАПНО: Исключение С++, вызванное оператором throw.
+
+#1: Исключение EXCEPTION_CPP_MSC (0xE06D7363) при выполнении кода по адресу 0x76D1D982 в функции RaiseException() в модуле C:\WINDOWS\System32\KERNELBASE.dll. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+Ой, всё (EXCEPTION_NONCONTINUABLE).
+
+#1: TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400], Instance: 0x0050A2FC (32-bit), Flags: CMdRE0, Thread: 0xBD0 (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x76D1D982 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x76A66EA8 in C:\WINDOWS\System32\ucrtbase.dll: CxxThrowException()
+# 6 0x6DC2D016 in C:\Windows\System32\uiautomationcore.dll: UiaReturnRawElementProvider()
+# 7 0x6DC60CD6 in C:\Windows\System32\uiautomationcore.dll: UiaHostProviderFromHwnd()
+# 8 0x6DD833B0 in C:\Windows\System32\uiautomationcore.dll: WindowPattern_WaitForInputIdle()
+# 9 0x6DD838E6 in C:\Windows\System32\uiautomationcore.dll: WindowPattern_WaitForInputIdle()
+#10 0x6DC20C13 in C:\Windows\System32\uiautomationcore.dll: UiaReturnRawElementProvider()
+#11 0x6DC20338 in C:\Windows\System32\uiautomationcore.dll: UiaReturnRawElementProvider()
+#12 0x5DB7977C in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::TooltipMaxWidthProp()
+#13 0x62E5F491 in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#14 0x5DB5D178 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::HWNDElement::StaticWndProc()
+#15 0x763F0F4B in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#16 0x763E7EFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#17 0x763E75D7 in C:\WINDOWS\System32\USER32.dll: GetSystemMetricsForDpi()
+#18 0x763E577B in C:\WINDOWS\System32\USER32.dll: CallWindowProcW()
+#19 0x5DAA270E in C:\WINDOWS\SYSTEM32\DUser.dll: InvalidateGadget()
+#20 0x763F0F4B in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#21 0x763E7EFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#22 0x763E75D7 in C:\WINDOWS\System32\USER32.dll: GetSystemMetricsForDpi()
+#23 0x763E577B in C:\WINDOWS\System32\USER32.dll: CallWindowProcW()
+#24 0x6D79AE5D in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#25 0x6D79ABF6 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#26 0x62E81EEB in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#27 0x62E81E4F in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#28 0x6D79AE02 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#29 0x6D79ABF6 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#30 0x62E82CA7 in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#31 0x62E82C4F in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#32 0x6D79AE02 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#33 0x6D79AEFB in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#34 0x6D79ACB1 in C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3570_none_a868611086700d20\Comctl32.dll: DefSubclassProc()
+#35 0x763F0F4B in C:\WINDOWS\System32\USER32.dll: AddClipboardFormatListener()
+#36 0x763E7EFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#37 0x763E7AFA in C:\WINDOWS\System32\USER32.dll: GetClassLongW()
+#38 0x763EB6BF in C:\WINDOWS\System32\USER32.dll: CallNextHookEx()
+#39 0x7746508D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+#40 0x763EB1C2 in C:\WINDOWS\System32\USER32.dll: SendMessageTimeoutW()
+#41 0x748F8C95 in C:\WINDOWS\system32\Oleacc.dll: GetOleaccVersionInfo()
+#42 0x748F8B4B in C:\WINDOWS\system32\Oleacc.dll: GetOleaccVersionInfo()
+#43 0x7491F43E in C:\WINDOWS\system32\Oleacc.dll: AccGetRunningUtilityState()
+#44 0x7491F9F7 in C:\WINDOWS\system32\Oleacc.dll: AccessibleObjectFromEvent()
+#45 0x75F5EBF9 in C:\WINDOWS\System32\MSCTF.dll: TF_SetShowFloatingStatus()
+#46 0x75F2BDD5 in C:\WINDOWS\System32\MSCTF.dll: TF_SendLangBandMsg()
+#47 0x75EEF828 in C:\WINDOWS\System32\MSCTF.dll: HasDeferredInputForCoreDispatcher()
+#48 0x75EEEB82 in C:\WINDOWS\System32\MSCTF.dll: CtfImeSetActiveContext()
+#49 0x763EF4C9 in C:\WINDOWS\System32\USER32.dll: GetClassNameW()
+#50 0x7746508D in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserCallbackDispatcher()
+#51 0x6DC9C964 in C:\Windows\System32\uiautomationcore.dll: UiaDisconnectProvider()
+#52 0x6DC6168C in C:\Windows\System32\uiautomationcore.dll: UiaRaiseAutomationEvent()
+#53 0x5DBEFE9D in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::EventManager::HandleAccChange()
+#54 0x5DB785F7 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::TooltipMaxWidthProp()
+#55 0x62E85AEA in C:\WINDOWS\system32\explorerframe.dll: Ordinal130()
+#56 0x5DB4A139 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::_PostSourceChange()
+#57 0x5DB475EC in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::_SetValue()
+#58 0x5DB64DA1 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::SetKeyFocus()
+#59 0x62EC678A in C:\WINDOWS\system32\explorerframe.dll: DllCanUnloadNow()
+#60 0x5DB458F3 in C:\WINDOWS\SYSTEM32\DUI70.dll: DirectUI::Element::_DisplayNodeCallback()
+#61 0x5DAA2013 in C:\WINDOWS\SYSTEM32\DUser.dll: SetGadgetRootInfo()
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in std::string filedialog(bool) at C:\Users\Anastasia\Desktop\projectHudy\main.cpp (179):
+
+    177:     ZeroMemory(&ofn, sizeof(ofn));
+    178:     ofn.lStructSize = sizeof(ofn);
+=>  179:     ofn.hwndOwner = txWindow();
+    180:     ofn.lpstrFile = szFile;
+    181:     // Set lpstrFile[0] to '\0' so that GetOpenFileName does not
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 172, Date: 2023-08-12 11:12:24 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\users\anastasia\desktop\codeblocks\mingw\include\txlib.h
+Compiled:	Dec  6 2023 20:23:28, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Dec 06 2023 20:29:19
+
+Run file:	C:\Users\Anastasia\Desktop\projectHudy\bin\Debug\projectHudy.exe
+Directory:	C:\Users\Anastasia\Desktop\projectHudy\Сохранённое
+
+--------------------------------------------------

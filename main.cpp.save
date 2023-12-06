@@ -40,6 +40,7 @@ struct picture
 struct Button
 {
     int x;
+    int y;
     const char* name;
     string category;
     int t;
@@ -55,32 +56,32 @@ struct Button
     {
         txSetColor (TX_GRAY, 2);
         txSetFillColor (TX_GRAY);
-        Win32::RoundRect(txDC(), x + 3, 17, x + 136, 43, 20, 20);
+        Win32::RoundRect(txDC(), x + 3, y + 1, x + 136,  y + 27, 20, 20);
         txSetColor (TX_BLACK, 2);
         if(knop == t) txSetFillColor(RGB ( 0, 200, 10)); else txSetFillColor (TX_WHITE);
-        Win32::RoundRect(txDC(), x + 2, 16, x + 135, 42, 20, 20);
+        Win32::RoundRect(txDC(), x + 2, y, x + 135, y + 26, 20, 20);
         txSetColor(TX_BLACK);
         txSelectFont("Times New Roman", 25);
-        txDrawText(x + 2, 16, x + 135, 42, name);
+        txDrawText(x + 2, y, x + 135,  y + 26, name);
 
     }
     else
     {
         txSetColor (TX_GRAY, 2);
         txSetFillColor (TX_GRAY);
-        Win32::RoundRect(txDC(), x + 3, 17, x + 136, 43, 20, 20);
+        Win32::RoundRect(txDC(), x + 3, y+1, x + 136, y+27, 20, 20);
         txSetColor (TX_BLACK, 2);
         txSetFillColor (TX_WHITE);
-        Win32::RoundRect(txDC(), x, 14, x + 133, 40, 20, 20);
+        Win32::RoundRect(txDC(), x, y - 2, x + 133, y + 24, 20, 20);
         txSetColor(TX_BLACK);
         txSelectFont("Times New Roman", 25);
-        txDrawText(x, 14, x + 133, 40, name);
+        txDrawText(x, y-2, x + 133, y + 24, name);
     }
 }
 
     bool click()
     {
-        return ( txMouseButtons() == 1 && txMouseX() > x && txMouseX() < x + 138 && txMouseY() > 14 && txMouseY() < 40);
+        return ( txMouseButtons() == 1 && txMouseX() > x && txMouseX() < x + 138 && txMouseY() > y-2 && txMouseY() < y+24);
     }
 
 };
@@ -132,7 +133,7 @@ int ReadFolders(string adressDir, picture menu_pic[], int count_pic)
 {
     DIR *dir;
     struct dirent *ent;
-    int X = 900;
+    int X = 940;
     int Y = 50;
     if ((dir = opendir (adressDir.c_str())) != NULL)
     {
@@ -140,50 +141,103 @@ int ReadFolders(string adressDir, picture menu_pic[], int count_pic)
         {
             if((string)ent->d_name != "." && (string)ent->d_name != "..")
             {
-                if(Y =)
-                menu_pic[count_pic].y = Y;
-                menu_pic[count_pic].x = X;
+                if(Y<=500)
+                {
+                    menu_pic[count_pic].y = Y;
+                    menu_pic[count_pic].x = X;
+                }
+                else
+                {
+                    X +=100;
+                    Y = 50;
+                    menu_pic[count_pic].y = Y;
+                    menu_pic[count_pic].x = X;
+                }
                 menu_pic[count_pic].adress = adressDir + (string)ent->d_name;
                 count_pic++;
                 Y+= 150;
             }
       }
-        closedir (dir);
+      closedir (dir);
     }
+
+
     return count_pic;
 }
 
+string filedialog(bool isSave)
+{
+    string filename = "";
+
+    OPENFILENAME ofn;       // common dialog box structure
+    TCHAR szFile[260] = {0};    // buffer for file name
+
+
+    // Initialize OPENFILENAME
+    ZeroMemory(&ofn, sizeof(ofn));
+    ofn.lStructSize = sizeof(ofn);
+    ofn.hwndOwner = txWindow();
+    ofn.lpstrFile = szFile;
+    // Set lpstrFile[0] to '\0' so that GetOpenFileName does not
+    // use the contents of szFile to initialize itself.
+    ofn.lpstrFile[0] = '\0';
+    ofn.nMaxFile = sizeof(szFile);
+    ofn.lpstrFilter = ("Text/0*.TXT/0");
+    ofn.nFilterIndex = 1;
+    ofn.lpstrFileTitle = NULL;
+    ofn.nMaxFileTitle = 0;
+    ofn.lpstrInitialDir = NULL;
+    ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST;
+
+    // Display the Open dialog box.
+    if(isSave)
+    {
+        if (GetSaveFileName(&ofn)==TRUE)
+        {
+            filename = ofn.lpstrFile;
+            filename = filename + ".txt";
+        }
+    }
+    if(GetOpenFileName(&ofn) == TRUE)
+    {
+
+    }
+    
+    return filename;
+
+}
+
+
+//кол-во кнопок
+const int count_btn = 5;
+const int btn_save = count_btn - 2;
+const int btn_load = count_btn - 3;
 
 int main()
 {
     txTextCursor (false);
     txDisableAutoPause();
 
-    int count_btn = 3;
     int count_pic = 0;
     int quest = -1;
     bool mousefree = false;
 
     int ncentr_pic = 0;
 
-    txCreateWindow (1250, 650);
-
+    //txCreateWindow (1250, 650);
+    txCreateWindow(1250, 700);
     Button btn[count_btn];
-    btn[0] = {10, "Вид одежды", "T-Shirt", 1};
-    btn[1] = {158, "Напитки", "drinks", 2};
-    btn[2] = {158 + 148, "Головные уборы", "head_wear", 3};
+    btn[0] = {10, 16, "Вид одежды", "T-Shirt", 1};
+    btn[1] = {158, 16, "Напитки", "drinks", 2};
+    btn[2] = {158 + 148, 16, "Головные уборы", "head_wear", 3};
+
+    btn[btn_save] = {10, 650, "Сохранить...", "", 4};
+    btn[btn_load] = {158, 650, "Открыть...", "", 4};
+
+
 
     picture menu_pic[50];
-    menu_pic[0] = {900,  50};
-    menu_pic[1] = {900, 200};
-    menu_pic[2] = {900, 350};
-    menu_pic[3] = {900,  50};
-    menu_pic[4] = {900, 200;
-    menu_pic[5] = {900,  350};
-    menu_pic[6] = {900, 500};
-    menu_pic[7] = {1000,  50};
-    menu_pic[8] = {1000, 200};
-    menu_pic[9] = {900,  50};
+
     count_pic = ReadFolders("photo/T-Shirt/", menu_pic, count_pic);
     count_pic = ReadFolders("photo/drinks/", menu_pic, count_pic);
     count_pic = ReadFolders("photo/head_wear/", menu_pic, count_pic);
@@ -209,8 +263,8 @@ int main()
         }
         if(menu_pic[i].category == "T-Shirt")
         {
-             menu_pic[i].w_scr = menu_pic[i].w / 2;
-             menu_pic[i].h_scr = menu_pic[i].h / 2;
+             menu_pic[i].w_scr = menu_pic[i].w / 9;
+             menu_pic[i].h_scr = menu_pic[i].h / 9;
         }
     }
 
@@ -322,6 +376,49 @@ int main()
             centr_pic[quest] = centr_pic[ncentr_pic - 1];
             ncentr_pic--;
             quest = -1;
+        }
+
+        if(btn[btn_save].click())
+        {
+
+            string filename = filedialog();
+            ofstream out;
+            out.open(filename);
+            if(out.is_open())
+            {
+                for(int i = 0; i < ncentr_pic; i++)
+                {
+                    out << centr_pic[i].x << endl;
+                    out << centr_pic[i].y << endl;
+                    out << centr_pic[i].adress << endl;
+                }
+            }
+            out.close();
+            txMessageBox("  Сохранено", "Программа сообщает:", MB_ICONINFORMATION);
+
+        }
+        if(btn[btn_load].click())
+        {
+            int n = 10;
+            char buffer[50];
+            ifstream file("result.txt");
+            while(file.good())
+            {
+                file.getline(buffer, 50);
+                int x = atoi(buffer);
+                file.getline(buffer, 50);
+                int y = atoi(buffer);
+                file.getline(buffer, 50);
+                string adress = buffer;
+                for(int i = 0; i < ncentr_pic; i++)
+                {
+                    if(adress == menu_pic[i].adress)     {
+                    centr_pic[ncentr_pic] = {x, y, menu_pic[i].w - menu_pic[i].w * 0.2,menu_pic[i].h - menu_pic[i].h * 0.2, menu_pic[i].adress, menu_pic[i].pic, menu_pic[i].w,menu_pic[i].h, true,""};
+                    ncentr_pic++;
+                    }
+                }
+            }
+            file.close();
         }
         txEnd();
 
